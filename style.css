@@ -20,6 +20,7 @@ nav {
 .brand-logo img {
   width: 180px;
   margin-top: 45px;
+  margin-left: -15px;
 }
 
 .landing_decoration {
@@ -55,12 +56,17 @@ nav {
   font-size: 20px;
 }
 
-.fw-500 {
-  font-weight: 500;
+.fw-300 {
+  font-weight: 300;
 }
 
 .text-slider-content {
   width: 50%;
+}
+
+.text-slider-content p {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
 }
 
 .text-slider-content p {
@@ -128,8 +134,8 @@ nav {
 
 .slider-content-image-1 {
   position: absolute;
-  bottom: -2%;
-  left: 7%;
+  bottom: -3.5%;
+  left: 5%;
   transform: translate(-50%, -50%);
   z-index: 4;
   width: 200px;
@@ -141,7 +147,7 @@ nav {
 
 .slider-content-image-2 {
   position: absolute;
-  bottom: -12%;
+  bottom: -13%;
   right: 0;
   transform: translate(-50%, -50%);
   z-index: 4;
@@ -231,7 +237,6 @@ nav {
 }
 
 .room-text-header {
-  font-family: "Inter", sans-serif;
   font-size: 35px;
   font-weight: 700;
   color: #5e5e5e;
@@ -366,33 +371,7 @@ nav {
 }
 
 /* facility */
-.header-section-facility {
-    position: relative;
-}
-
-.header-facility {
-  background-color: rgba(37, 169, 187, 0.04);
-  /* background-color: yellow; */
-}
-.section-divider {
-    width: 100%;
-}
-
-.facility-util-1 {
-    position: absolute;
-    top: 0;
-    left: 5%;
-    width: 125px;
-    z-index: 1;
-}
-
-.content-facility {
-    background-color: rgba(37, 169, 187, 0.04);
-    /* background-color: yellow; */
-}
-
 .facility-header-content-text {
-    font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: #5e5e5e;
@@ -500,4 +479,43 @@ nav {
 .card-testimoni {
   border-radius: 20px;
   border: 2px solid #25a9bb;
+}
+
+/* .carousel { */
+  /* background-color: yellow; */
+  /* height: 320px; */
+/* } */
+ /* .carousel {
+  transform: rotate(90deg) translateY(-20%) translateX(-80%)
+}
+
+.carousel .carousel-item img {
+  transform: rotate(-90deg);
+}  */
+
+.carousel .indicators {
+  position: relative !important;
+  /* background-color: black; */
+  margin-top: 270px;
+}
+
+.carousel .indicator-item.active {
+  background-color: #1a9da5 !important;
+  width: 40px !important;
+  border-radius: 4px;
+}
+
+.carousel .indicator-item {
+background-color: rgba(37, 169, 187, 0.32) !important;
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.bg-facility {
+  background-color: white; 
+  border-radius: 50%; 
+  width: 100%; 
+  padding-top: 10px; 
+  padding-bottom: 5px; 
+  box-shadow: 0px 8px 32px 0px rgba(187, 187, 187, 0.25);
 }
