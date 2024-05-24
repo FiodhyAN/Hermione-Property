@@ -476,6 +476,10 @@ nav {
   border: 2px solid #25a9bb;
 }
 
+.icon-indicator {
+  cursor: pointer;
+}
+
 /* .carousel { */
   /* background-color: yellow; */
   /* height: 320px; */
