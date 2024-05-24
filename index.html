@@ -74,7 +74,7 @@
             Temukan ketenangan yang anda inginkan dengan pilihan kamar ternyaman
             di hermione
           </p>
-          <a href="#" class="btn btn-landing btn_outline">Tentang Kami</a>
+          <button class="btn btn-landing btn_outline" id="btn_about">Tentang Kami</button>
           <button class="btn btn-landing" id="btn_pesan">Pesan Sekarang</button>
         </div>
         <div class="slider-content-image-1">
@@ -163,7 +163,7 @@
                     </p>
                   </div>
                   <div class="col s8 right-align">
-                    <button class="btn btn-room-order">
+                    <button class="btn btn-room-order" data-kamar="One Bedroom">
                       <i class="fa fa-whatsapp left"></i> Pesan Kamar
                     </button>
                   </div>
@@ -233,7 +233,7 @@
                     </p>
                   </div>
                   <div class="col s8 right-align">
-                    <button class="btn btn-room-order">
+                    <button class="btn btn-room-order" data-kamar="Studio">
                       <i class="fa fa-whatsapp left"></i> Pesan Kamar
                     </button>
                   </div>
@@ -671,7 +671,7 @@
     </section>
 
     <!-- about -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="row valign-wrapper">
         <div class="col s12 right-align">
           <img
@@ -816,7 +816,7 @@
                           src="./assets/images/profile_testimoni_1.png"
                           alt="testimoni"
                           class="circle"
-                          style="width: 100px"
+                          style="width: 40px"
                         />
                         <p
                           style="
@@ -1149,9 +1149,22 @@
       </div>
     </footer>
 
+    <div class="fixed-action-btn">
+      <button
+        class="btn-floating btn-large waves-effect waves-light"
+        id="btnScrollToTop"
+        style="background-color: #1a9da5 !important"
+      >
+        <i class="large material-icons">arrow_upward</i>
+      </button>
+      <button class="waves-effect waves-light btn rent-btn">
+        How to rent?
+      </button>
+    </div>
+
     <script
-      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

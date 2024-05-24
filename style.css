@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Common styles */
 .landing {
   height: 100vh; /* Set height to 100% of viewport height */
 }
@@ -52,7 +53,6 @@ nav {
 
 .slider-content p {
   margin-bottom: 20px;
-  text-wrap: wrap;
   font-size: 20px;
 }
 
@@ -67,10 +67,6 @@ nav {
 .text-slider-content p {
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
-}
-
-.text-slider-content p {
-  border-bottom: 2px solid #fff;
 }
 
 .slider .indicator-item.active {
@@ -101,11 +97,7 @@ nav {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0)
-  );
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   position: absolute;
   z-index: 3;
   bottom: 0;
@@ -114,7 +106,7 @@ nav {
 .btn-landing {
   background-color: #25a9bb;
   height: max-content;
-  padding: 6px 24px 6px 24px;
+  padding: 6px 24px;
   font-weight: 700;
   color: #fff;
   border-radius: 54px;
@@ -125,7 +117,7 @@ nav {
   background-color: transparent;
   border: 1px solid #fff;
   height: max-content;
-  padding: 6px 24px 6px 24px;
+  padding: 6px 24px;
   font-weight: 700;
   color: #fff;
   border-radius: 54px;
@@ -159,9 +151,10 @@ nav {
 }
 
 /* service */
-
 .service {
   padding: 50px 0;
+  margin-top: 124px;
+  gap: 20px;
 }
 
 .container-service {
@@ -226,6 +219,9 @@ nav {
 .room {
   margin-top: -130px;
   margin-bottom: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-room {
@@ -233,7 +229,6 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px 60px;
 }
 
 .room-text-header {
@@ -463,7 +458,7 @@ nav {
   left: 0;
   width: 50%;
   height: 50%;
-  border-top-left-radius: 20px;
+  border-top-left-radius: 64px;
   z-index: 1;
 }
 
@@ -472,12 +467,12 @@ nav {
   right: 0;
   width: 50%;
   height: 50%;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 64px;
   z-index: 1;
 }
 
 .card-testimoni {
-  border-radius: 20px;
+  border-radius: 40px;
   border: 2px solid #25a9bb;
 }
 
@@ -518,4 +513,38 @@ background-color: rgba(37, 169, 187, 0.32) !important;
   padding-top: 10px; 
   padding-bottom: 5px; 
   box-shadow: 0px 8px 32px 0px rgba(187, 187, 187, 0.25);
+}
+
+.rent-btn {
+  background-color: #5e5e5e;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: none;
+    padding: 15px;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    text-align: center; /* Center text horizontally */
+}
+
+.fixed-action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.fixed-action-btn .btn-floating {
+  margin-bottom: 10px; /* Space between the buttons */
+}
+
+.fixed-action-btn .rent-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
 }
