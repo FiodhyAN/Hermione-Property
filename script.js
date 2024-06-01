@@ -21,14 +21,31 @@ $(document).ready(function () {
     $('.slider.slider-testimoni').slider('next');
   })
 
+  let carousel_padding;
+  function adjustCardLayout() {
+    let card = $('.card-room');
+    let fab = $('.btn-floating');
+    if($(window).width() < 992){
+      card.removeClass('horizontal');
+      fab.addClass('btn-medium');
+      carousel_padding = 50;
+    } else {
+      card.addClass('horizontal');
+      fab.addClass('btn-large');
+      carousel_padding = 20;
+    }
+  }
+
+  adjustCardLayout();
+
   $('.carousel.carousel-lobby').carousel({
     dist: 0,
     indicators: true,
-    padding: 20
+    padding: carousel_padding
   });
-  $('.carousel.carousel-lobby .indicators').wrap('<div class="indicator-wrapper" style="display:flex; justify-content: center; margin-top: 20px;"></div>');
-  $(".indicator-wrapper").prepend('<i class="material-icons icon-indicator icon-prev-lobby" style="position: absolute; top: 305px; left: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_left</i>');
-  $(".indicator-wrapper").append('<i class="material-icons icon-indicator icon-next-lobby" style="position: absolute; top: 305px; right: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_right</i>');
+  $('.carousel.carousel-lobby .indicators').wrap('<div class="indicator-wrapper-lobby indicator-wrapper"></div>');
+  $(".indicator-wrapper-lobby").prepend('<i class="material-icons icon-indicator icon-prev icon-prev-lobby">chevron_left</i>');
+  $(".indicator-wrapper-lobby").append('<i class="material-icons icon-indicator icon-next icon-next-lobby">chevron_right</i>');
   $('.icon-prev-lobby').on('click', function(){
     $('.carousel.carousel-lobby').carousel('prev');
   })
@@ -41,9 +58,9 @@ $(document).ready(function () {
     indicators: true,
     padding: 20
   });
-  $('.carousel.carousel-swimming-pool .indicators').wrap('<div class="indicator-wrapper" style="display:flex; justify-content: center; margin-top: 20px;"></div>');
-  $(".indicator-wrapper").prepend('<i class="material-icons icon-indicator icon-prev-swimming-pool" style="position: absolute; top: 305px; left: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_left</i>');
-  $(".indicator-wrapper").append('<i class="material-icons icon-indicator icon-next-swimming-pool" style="position: absolute; top: 305px; right: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_right</i>');
+  $('.carousel.carousel-swimming-pool .indicators').wrap('<div class="indicator-wrapper-swimming-pool indicator-wrapper"></div>');
+  $(".indicator-wrapper-swimming-pool").prepend('<i class="material-icons icon-indicator icon-prev icon-prev-swimming-pool">chevron_left</i>');
+  $(".indicator-wrapper-swimming-pool").append('<i class="material-icons icon-indicator icon-next icon-next-swimming-pool">chevron_right</i>');
   $('.icon-prev-swimming-pool').on('click', function(){
     $('.carousel.carousel-swimming-pool').carousel('prev');
   })
@@ -56,9 +73,9 @@ $(document).ready(function () {
     indicators: true,
     padding: 20
   });
-  $('.carousel.carousel-pocket-garden .indicators').wrap('<div class="indicator-wrapper" style="display:flex; justify-content: center; margin-top: 20px;"></div>');
-  $(".indicator-wrapper").prepend('<i class="material-icons icon-indicator icon-prev-pocket-garden" style="position: absolute; top: 305px; left: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_left</i>');
-  $(".indicator-wrapper").append('<i class="material-icons icon-indicator icon-prev-pocket-garden" style="position: absolute; top: 305px; right: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_right</i>');
+  $('.carousel.carousel-pocket-garden .indicators').wrap('<div class="indicator-wrapper-pocket-garden indicator-wrapper"></div>');
+  $(".indicator-wrapper-pocket-garden").prepend('<i class="material-icons icon-indicator icon-prev icon-prev-pocket-garden">chevron_left</i>');
+  $(".indicator-wrapper-pocket-garden").append('<i class="material-icons icon-indicator icon-next icon-next-pocket-garden">chevron_right</i>');
   $('.icon-prev-pocket-garden').on('click', function(){
     $('.carousel.carousel-pocket-garden').carousel('prev');
   })
@@ -71,9 +88,9 @@ $(document).ready(function () {
     indicators: true,
     padding: 20
   });
-  $('.carousel.carousel-gym .indicators').wrap('<div class="indicator-wrapper" style="display:flex; justify-content: center; margin-top: 20px;"></div>');
-  $(".indicator-wrapper").prepend('<i class="material-icons icon-indicator icon-prev-gym" style="position: absolute; top: 305px; left: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_left</i>');
-  $(".indicator-wrapper").append('<i class="material-icons icon-indicator icon-next-gym" style="position: absolute; top: 305px; right: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_right</i>');
+  $('.carousel.carousel-gym .indicators').wrap('<div class="indicator-wrapper-gym indicator-wrapper"></div>');
+  $(".indicator-wrapper-gym").prepend('<i class="material-icons icon-indicator icon-prev icon-prev-gym">chevron_left</i>');
+  $(".indicator-wrapper-gym").append('<i class="material-icons icon-indicator icon-next icon-next-gym">chevron_right</i>');
   $('.icon-prev-gym').on('click', function(){
     $('.carousel.carousel-gym').carousel('prev');
   })
@@ -86,9 +103,9 @@ $(document).ready(function () {
     indicators: true,
     padding: 20
   });
-  $('.carousel.carousel-access-mall .indicators').wrap('<div class="indicator-wrapper" style="display:flex; justify-content: center; margin-top: 20px;"></div>');
-  $(".indicator-wrapper").prepend('<i class="material-icons icon-indicator icon-prev-access-mall" style="position: absolute; top: 305px; left: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_left</i>');
-  $(".indicator-wrapper").append('<i class="material-icons icon-indicator icon-next-access-mall" style="position: absolute; top: 305px; right: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_right</i>');
+  $('.carousel.carousel-access-mall .indicators').wrap('<div class="indicator-wrapper-access-mall indicator-wrapper"></div>');
+  $(".indicator-wrapper-access-mall").prepend('<i class="material-icons icon-indicator icon-prev icon-prev-access-mall">chevron_left</i>');
+  $(".indicator-wrapper-access-mall").append('<i class="material-icons icon-indicator icon-next icon-next-access-mall">chevron_right</i>');
   $('.icon-prev-access-mall').on('click', function(){
     $('.carousel.carousel-access-mall').carousel('prev');
   })
@@ -101,9 +118,9 @@ $(document).ready(function () {
     indicators: true,
     padding: 20
   })
-  $('.carousel.carousel-vending-machine .indicators').wrap('<div class="indicator-wrapper" style="display:flex; justify-content: center; margin-top: 20px;"></div>');
-  $(".indicator-wrapper").prepend('<i class="material-icons icon-indicator icon-prev-vending-machine" style="position: absolute; top: 305px; left: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_left</i>');
-  $(".indicator-wrapper").append('<i class="material-icons icon-indicator icon-nex-vending-machine" style="position: absolute; top: 305px; right: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_right</i>');
+  $('.carousel.carousel-vending-machine .indicators').wrap('<div class="indicator-wrapper-vending-machine indicator-wrapper"></div>');
+  $(".indicator-wrapper-vending-machine").prepend('<i class="material-icons icon-indicator icon-prev icon-prev-vending-machine">chevron_left</i>');
+  $(".indicator-wrapper-vending-machine").append('<i class="material-icons icon-indicator icon-next icon-next-vending-machine">chevron_right</i>');
   $('.icon-prev-vending-machine').on('click', function(){
     $('.carousel.carousel-vending-machine').carousel('prev');
   })
@@ -116,9 +133,9 @@ $(document).ready(function () {
     indicators: true,
     padding: 20
   });
-  $('.carousel.carousel-parking-area .indicators').wrap('<div class="indicator-wrapper" style="display:flex; justify-content: center; margin-top: 20px;"></div>');
-  $(".indicator-wrapper").prepend('<i class="material-icons icon-indicator icon-prev-parking-area" style="position: absolute; top: 305px; left: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_left</i>');
-  $(".indicator-wrapper").append('<i class="material-icons icon-indicator icon-next-parking-area" style="position: absolute; top: 305px; right: 60px; border: 1px solid rgba(198, 198, 198, 1); border-radius: 50%; color: rgba(94, 94, 94, 1);">chevron_right</i>');
+  $('.carousel.carousel-parking-area .indicators').wrap('<div class="indicator-wrapper-parking-area indicator-wrapper"></div>');
+  $(".indicator-wrapper-parking-area").prepend('<i class="material-icons icon-indicator icon-prev icon-prev-parking-area">chevron_left</i>');
+  $(".indicator-wrapper-parking-area").append('<i class="material-icons icon-indicator icon-next icon-next-parking-area">chevron_right</i>');
   $('.icon-prev-parking-area').on('click', function(){
     $('.carousel.carousel-parking-area').carousel('prev');
   })

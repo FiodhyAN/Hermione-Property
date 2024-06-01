@@ -74,7 +74,9 @@
             Temukan ketenangan yang anda inginkan dengan pilihan kamar ternyaman
             di hermione
           </p>
-          <button class="btn btn-landing btn_outline" id="btn_about">Tentang Kami</button>
+          <button class="btn btn-landing btn_outline" id="btn_about">
+            Tentang Kami
+          </button>
           <button class="btn btn-landing" id="btn_pesan">Pesan Sekarang</button>
         </div>
         <div class="slider-content-image-1">
@@ -94,39 +96,44 @@
       </div>
     </section>
 
-    <!-- service -->
     <section class="service">
       <div class="container container-service">
         <h3 class="center-align">
           Bagaimana <span class="blue_text">Pelayanan</span> Kami?
         </h3>
-        <div class="row card_row">
-          <div class="col s12 m4">
+        <div class="card_row">
+          <div class="card-container">
+            <!-- <div class="col s12 m4"> -->
             <div class="card card-service">
               <div class="card-content">
                 <img src="./assets/images/service_1.png" alt="service_1" />
               </div>
             </div>
             <h5 class="center-align service-card-text">100% Aman</h5>
+            <!-- </div> -->
           </div>
-          <div class="col s12 m4">
+          <div class="card-container">
+            <!-- <div class="col s12 m4"> -->
             <div class="card card-service">
               <div class="card-content">
                 <img src="./assets/images/service_2.png" alt="service_2" />
               </div>
             </div>
             <h5 class="center-align service-card-text">Nyaman</h5>
+            <!-- </div> -->
           </div>
-          <div class="col s12 m4">
+          <div class="card-container">
+            <!-- <div class="col s12 m4"> -->
             <div class="card card-service">
               <div class="card-content">
                 <img src="./assets/images/service_3.png" alt="service_3" />
               </div>
             </div>
             <h5 class="center-align service-card-text">Terpercaya</h5>
+            <!-- </div> -->
           </div>
         </div>
-        <p class="center-align service-footer-text">
+        <p class="service-footer-text">
           Seluruh Tim Kami Siap Sedia Melayani Anda 24 Jam Penuh dengan
           pelayanan terbaik kami.
         </p>
@@ -136,8 +143,7 @@
       </div>
     </section>
 
-    <!-- room -->
-    <section class="room" id="room" style="margin-bottom: 100px">
+    <section class="room" id="room">
       <div class="container-room">
         <h1 class="center-align room-text-header">
           <span class="blue_text">Kamar</span> Kami Adalah Kualitas
@@ -146,7 +152,7 @@
         </h1>
         <div class="row mt-50">
           <div class="col s12">
-            <div class="card horizontal card-room">
+            <div class="card card-room">
               <div class="card-image card-image-room">
                 <img src="./assets/images/room_one_bedroom.jpeg" />
                 <button class="btn btn-image-room">Lihat foto lainnya</button>
@@ -216,7 +222,7 @@
 
         <div class="row mt-50">
           <div class="col s12">
-            <div class="card horizontal card-room">
+            <div class="card card-room">
               <div class="card-image card-image-room">
                 <img src="./assets/images/room_studio.jpeg" />
                 <button class="btn btn-image-room">Lihat foto lainnya</button>
@@ -286,7 +292,6 @@
       </div>
     </section>
 
-    <!-- facility -->
     <section
       class="content-facility"
       style="background-color: rgba(37, 169, 187, 0.04)"
@@ -294,7 +299,7 @@
       <img
         src="./assets/images/util_nav_5.png"
         alt=""
-        style="position: absolute; margin-left: 20px; width: 125px"
+        class="util_nav_5"
       />
       <div class="header-facility">
         <img
@@ -305,8 +310,7 @@
         />
       </div>
       <div
-        class="container"
-        style="padding-left: 40px; margin-top: -200px; margin-bottom: 125px"
+        class="container container-header-facility"
       >
         <p class="left-align facility-header-content-text">
           <span class="blue_text">Cuma Dapat Itu Aja?</span> Tenang Kamu Juga
@@ -315,48 +319,50 @@
       </div>
       <div class="container">
         <div class="row valign-wrapper">
-          <div class="col s4 image-facility center-align">
-            <div class="carousel carousel-slider carousel-lobby">
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/lobby_area.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+          <div class="facility-container">
+            <div class="image-facility">
+              <div class="carousel carousel-slider carousel-lobby">
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/lobby_area.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/lobby_area.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/lobby_area.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/lobby_area.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/lobby_area.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col s8" style="margin-top: -180px">
-            <div class="facility-small-header-container">
-              <h5 class="facility-small-header-text">Lobby Area</h5>
+            <div class="text-facility">
+              <div class="facility-small-header-container">
+                <h5 class="facility-small-header-text">Lobby Area</h5>
+              </div>
+              <p class="facility-small-content-text">
+                Lobby area adalah tempat pertama yang menyambut tamu dengan
+                kehangatan dan kemewahan. Dengan dekorasi yang menawan dan
+                suasana yang nyaman, ruang ini tidak hanya menjadi pintu gerbang
+                ke pengalaman yang tak terlupakan, tetapi juga menjadi tempat di
+                mana tamu dapat merasa di rumah dan santai.
+              </p>
             </div>
-            <p class="facility-small-content-text">
-              Lobby area adalah tempat pertama yang menyambut tamu dengan
-              kehangatan dan kemewahan. Dengan dekorasi yang menawan dan suasana
-              yang nyaman, ruang ini tidak hanya menjadi pintu gerbang ke
-              pengalaman yang tak terlupakan, tetapi juga menjadi tempat di mana
-              tamu dapat merasa di rumah dan santai.
-            </p>
           </div>
         </div>
       </div>
@@ -367,141 +373,48 @@
 
       <div class="container" style="margin-top: 75px">
         <div class="row valign-wrapper">
-          <div class="col s8">
-            <div class="facility-small-header-container">
-              <h5 class="facility-small-header-text">Swimming Pool</h5>
+          <div class="facility-container-rtl">
+            <div class="text-facility">
+              <div class="facility-small-header-container">
+                <h5 class="facility-small-header-text">Swimming Pool</h5>
+              </div>
+              <p class="facility-small-content-text">
+                Swimming pool adalah oasis kesegaran di tengah kesibukan, di mana
+                tamu dapat menikmati momen santai sambil menikmati sinar matahari.
+                Dikelilingi oleh pemandangan yang menakjubkan dan dilengkapi
+                dengan fasilitas yang nyaman, kolam renang menjadi tempat ideal
+                untuk melepaskan penat dan merasakan kebahagiaan di setiap tetes
+                airnya.
+              </p>
             </div>
-            <p class="facility-small-content-text">
-              Swimming pool adalah oasis kesegaran di tengah kesibukan, di mana
-              tamu dapat menikmati momen santai sambil menikmati sinar matahari.
-              Dikelilingi oleh pemandangan yang menakjubkan dan dilengkapi
-              dengan fasilitas yang nyaman, kolam renang menjadi tempat ideal
-              untuk melepaskan penat dan merasakan kebahagiaan di setiap tetes
-              airnya.
-            </p>
-          </div>
-          <div class="col s4 image-facility">
-            <div class="carousel carousel-slider carousel-swimming-pool">
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/swimming_pool.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+            <div class="image-facility">
+              <div class="carousel carousel-slider carousel-swimming-pool">
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/swimming_pool.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/swimming_pool.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/swimming_pool.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/swimming_pool.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container" style="margin-top: 150px">
-        <div class="row valign-wrapper">
-          <div class="col s4 image-facility">
-            <div class="carousel carousel-slider carousel-pocket-garden">
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/pocket_garden.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/pocket_garden.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/pocket_garden.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s8">
-            <div class="facility-small-header-container">
-              <h5 class="facility-small-header-text">Pocket Garden</h5>
-            </div>
-            <p class="facility-small-content-text">
-              Pocket garden adalah oase kecil keindahan alam di tengah-tengah
-              hiruk pikuk kota. Dengan sentuhan tanaman hijau yang menenangkan,
-              tempat ini mengundang tamu untuk merasa rileks dan terhubung
-              dengan alam, memberikan kesempatan untuk melarikan diri sejenak
-              dari kepenatan sehari-hari.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container" style="margin-top: 150px">
-        <div class="row valign-wrapper">
-          <div class="col s8">
-            <div class="facility-small-header-container">
-              <h5 class="facility-small-header-text">GYM</h5>
-            </div>
-            <p class="facility-small-content-text">
-              Gym adalah pusat kebugaran di mana tamu dapat mengejar tujuan
-              kesehatan dan kebugaran mereka. Dengan peralatan modern dan
-              lingkungan yang mendukung, gym menjadi tempat untuk mengeksplorasi
-              potensi fisik dan meningkatkan kesejahteraan secara menyeluruh.
-            </p>
-          </div>
-          <div class="col s4 image-facility">
-            <div class="carousel carousel-slider carousel-gym">
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/gym.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/gym.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/gym.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/swimming_pool.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -511,48 +424,149 @@
 
       <div class="container" style="margin-top: 150px">
         <div class="row valign-wrapper">
-          <div class="col s4 image-facility">
-            <div class="carousel carousel-slider carousel-access-mall">
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/access_mall.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+          <div class="facility-container">
+            <div class="image-facility">
+              <div class="carousel carousel-slider carousel-pocket-garden">
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/pocket_garden.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/pocket_garden.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/pocket_garden.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/access_mall.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
-                </div>
+            </div>
+            <div class="text-facility">
+              <div class="facility-small-header-container">
+                <h5 class="facility-small-header-text">Pocket Garden</h5>
               </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/access_mall.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+              <p class="facility-small-content-text">
+                Pocket garden adalah oase kecil keindahan alam di tengah-tengah
+                hiruk pikuk kota. Dengan sentuhan tanaman hijau yang menenangkan,
+                tempat ini mengundang tamu untuk merasa rileks dan terhubung
+                dengan alam, memberikan kesempatan untuk melarikan diri sejenak
+                dari kepenatan sehari-hari.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top: 150px">
+        <div class="row valign-wrapper">
+          <div class="facility-container-rtl">
+            <div class="text-facility">
+              <div class="facility-small-header-container">
+                <h5 class="facility-small-header-text">GYM</h5>
+              </div>
+              <p class="facility-small-content-text">
+                Gym adalah pusat kebugaran di mana tamu dapat mengejar tujuan
+                kesehatan dan kebugaran mereka. Dengan peralatan modern dan
+                lingkungan yang mendukung, gym menjadi tempat untuk mengeksplorasi
+                potensi fisik dan meningkatkan kesejahteraan secara menyeluruh.
+              </p>
+            </div>
+            <div class="image-facility">
+              <div class="carousel carousel-slider carousel-gym">
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/gym.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/gym.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/gym.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col s8">
-            <div class="facility-small-header-container">
-              <h5 class="facility-small-header-text">Access Mall</h5>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top: 150px">
+        <div class="row valign-wrapper">
+          <div class="facility-container">
+            <div class="image-facility">
+              <div class="carousel carousel-slider carousel-access-mall">
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/access_mall.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/access_mall.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/access_mall.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="facility-small-content-text">
-              Access mall adalah pintu gerbang ke dunia belanja yang tak
-              terbatas. Dengan akses mudah ke berbagai toko dan fasilitas
-              hiburan, tempat ini menawarkan pengalaman berbelanja yang
-              menyenangkan dan menyegarkan bagi para pengunjung, memperkaya
-              kunjungan mereka dengan beragam pilihan dan kegiatan.
-            </p>
+            <div class="text-facility">
+              <div class="facility-small-header-container">
+                <h5 class="facility-small-header-text">Access Mall</h5>
+              </div>
+              <p class="facility-small-content-text">
+                Access mall adalah pintu gerbang ke dunia belanja yang tak
+                terbatas. Dengan akses mudah ke berbagai toko dan fasilitas
+                hiburan, tempat ini menawarkan pengalaman berbelanja yang
+                menyenangkan dan menyegarkan bagi para pengunjung, memperkaya
+                kunjungan mereka dengan beragam pilihan dan kegiatan.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -563,45 +577,47 @@
 
       <div class="container" style="margin-top: 75px">
         <div class="row valign-wrapper">
-          <div class="col s8">
-            <div class="facility-small-header-container">
-              <h5 class="facility-small-header-text">Vending Machine</h5>
+          <div class="facility-container-rtl">
+            <div class="text-facility">
+              <div class="facility-small-header-container">
+                <h5 class="facility-small-header-text">Vending Machine</h5>
+              </div>
+              <p class="facility-small-content-text">
+                Vending machine adalah mesin otomatis yang menyediakan berbagai
+                macam makanan ringan, minuman, dan barang-barang kecil lainnya
+                dengan cepat dan mudah. Ditempatkan di area strategis, vending
+                machine memberikan kemudahan bagi tamu untuk memenuhi kebutuhan
+                mereka tanpa harus meninggalkan kenyamanan tempat mereka menginap.
+              </p>
             </div>
-            <p class="facility-small-content-text">
-              Vending machine adalah mesin otomatis yang menyediakan berbagai
-              macam makanan ringan, minuman, dan barang-barang kecil lainnya
-              dengan cepat dan mudah. Ditempatkan di area strategis, vending
-              machine memberikan kemudahan bagi tamu untuk memenuhi kebutuhan
-              mereka tanpa harus meninggalkan kenyamanan tempat mereka menginap.
-            </p>
-          </div>
-          <div class="col s4 image-facility">
-            <div class="carousel carousel-slider carousel-vending-machine">
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/vending_machine.png"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+            <div class="image-facility">
+              <div class="carousel carousel-slider carousel-vending-machine">
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/vending_machine.png"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/vending_machine.png"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/vending_machine.png"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/vending_machine.png"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/vending_machine.png"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -614,70 +630,90 @@
         style="margin-top: 150px; z-index: 1; position: relative"
       >
         <div class="row valign-wrapper">
-          <div class="col s4 image-facility">
-            <div class="carousel carousel-slider carousel-parking-area">
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/parking_area.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+          <div class="facility-container">
+            <div class="image-facility">
+              <div class="carousel carousel-slider carousel-parking-area">
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/parking_area.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/parking_area.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/parking_area.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="bg-facility">
-                  <img
-                    src="./assets/images/parking_area.jpeg"
-                    alt="lobby"
-                    class="circle responsive-img"
-                  />
+                <div class="carousel-item">
+                  <div class="carousel-image">
+                    <img
+                      src="./assets/images/parking_area.jpeg"
+                      alt="lobby"
+                      class="circle responsive-img bg-facility"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col s8">
-            <div class="facility-small-header-container">
-              <h5 class="facility-small-header-text">Parking Area</h5>
+            <div class="text-facility">
+              <div class="facility-small-header-container">
+                <h5 class="facility-small-header-text">Parking Area</h5>
+              </div>
+              <p class="facility-small-content-text">
+                Parking area adalah ruang yang disediakan untuk para tamu agar
+                dapat dengan mudah dan aman memarkir kendaraan mereka. Dengan
+                fasilitas keamanan yang terjamin dan akses yang nyaman, parking
+                area memberikan kenyamanan ekstra bagi para pengunjung dalam
+                menjalani pengalaman mereka di tempat ini.
+              </p>
             </div>
-            <p class="facility-small-content-text">
-              Parking area adalah ruang yang disediakan untuk para tamu agar
-              dapat dengan mudah dan aman memarkir kendaraan mereka. Dengan
-              fasilitas keamanan yang terjamin dan akses yang nyaman, parking
-              area memberikan kenyamanan ekstra bagi para pengunjung dalam
-              menjalani pengalaman mereka di tempat ini.
-            </p>
           </div>
         </div>
       </div>
       <div
         class="footer-facility"
-        style="
-          margin-top: -90px;
-          background-image: url('./assets/images/gambar_asu_3.png');
-          background-size: cover;
-          height: 250px;
-        "
       ></div>
     </section>
 
-    <!-- about -->
+    <!-- <section class="facility-mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <p class="left-align card-content-text-amenities">
+              Fasilitas Lainnya:
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <ul class="facilities">
+              <li>Lobby Area</li>
+              <li>Swimming Pool</li>
+              <li>Pocket Garden</li>
+              <li>GYM</li>
+              <li>Access Mall</li>
+              <li>Vending Machine</li>
+              <li>Parking Area</li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </section> -->
+
     <section class="about" id="about">
       <div class="row valign-wrapper">
         <div class="col s12 right-align">
           <img
             src="./assets/images/util_nav_8.png"
             alt="util_nav_8"
-            style="width: 200px"
+            class="util_nav_8"
           />
         </div>
       </div>
@@ -685,79 +721,34 @@
         <div class="row valign-wrapper">
           <div class="col s12 center-align">
             <div class="card card-about">
-              <div class="card-content" style="padding: 10px">
+              <div class="card-content">
                 <div class="row">
                   <div class="col s12">
                     <img
                       src="./assets/images/gambar_gaje.png"
-                      alt=""
-                      style="width: 100%"
+                      alt="About Us"
+                      class="image-about"
                     />
-                    <h3
-                      class="about-header-text left-align"
-                      style="
-                        font-size: 30px;
-                        font-weight: 700;
-                        line-height: 40px;
-                        color: #777777;
-                        border-bottom: 1px solid #5e5e5e;
-                        width: 40%;
-                        margin-top: -60px;
-                      "
-                    >
-                      Tentang Kami
-                    </h3>
-                    <h5
-                      class="left-align"
-                      style="
-                        font-size: 20px;
-                        color: #1a9da5;
-                        line-height: 30px;
-                        font-weight: 700;
-                      "
-                    >
+                    <h3 class="about-header-text left-align">Tentang Kami</h3>
+                    <h5 class="left-align about-subheader-text">
                       Hermione Property
                     </h5>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col s12">
-                    <p
-                      class="left-align"
-                      style="
-                        font-size: 18px;
-                        line-height: 24px;
-                        font-weight: 400;
-                        color: #5e5e5e;
-                      "
-                    >
+                    <p class="left-align about-content-text">
                       merupakan sebuah perusahaan yang bergerak dalam bidang
                       persewaan properti apartemen di daerah Kota Bekasi.
                     </p>
                     <br />
-                    <p
-                      class="left-align"
-                      style="
-                        font-size: 18px;
-                        line-height: 24px;
-                        font-weight: 400;
-                        color: #5e5e5e;
-                      "
-                    >
+                    <p class="left-align about-content-text">
                       Dengan +50 unit yang dikelola Hermione Property
                       menjanjikan keamanan privasi dan kenyamanan pelanggan
                       menjadi prioritas kami.
                     </p>
                     <br />
-                    <p
-                      class="left-align"
-                      style="
-                        font-size: 18px;
-                        line-height: 24px;
-                        font-weight: 400;
-                        color: #5e5e5e;
-                      "
-                    >
+                    <p class="left-align about-content-text">
                       Sehingga 9/10 pelanggan kami puas dengan pelayanan yang
                       diberikan
                     </p>
@@ -768,13 +759,12 @@
           </div>
         </div>
       </div>
-
-      <div class="row valign-wrapper" style="margin-top: -40px">
-        <div class="col s12 left-align" style="margin-left: 5%">
+      <div class="row valign-wrapper mt-minus-40">
+        <div class="col s12 left-align ml-5-percent">
           <img
             src="./assets/images/util_nav_9.png"
             alt="util_nav_9"
-            style="width: 5px"
+            class="util_nav_9"
           />
         </div>
       </div>
@@ -784,16 +774,7 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h3
-              class="center-align"
-              style="
-                font-size: 30px;
-                font-weight: 700;
-                line-height: 40px;
-                color: #777777;
-                margin: 0 auto;
-              "
-            >
+            <h3 class="center-align testimoni-header-text">
               Testimoni <span class="blue_text">Pelanggan</span> Kami
             </h3>
           </div>
@@ -832,14 +813,7 @@
                       </div>
                       <div class="row" style="margin-top: 30px">
                         <div class="col s12">
-                          <p
-                            style="
-                              font-size: 20px;
-                              line-height: 30px;
-                              font-weight: 400;
-                              color: #777777;
-                            "
-                          >
+                          <p class="testimoni-text">
                             Bagus banget tempatnya, kolamnya juga luas+nyatu
                             sama mall pokoknya the best
                           </p>
@@ -883,14 +857,7 @@
                       </div>
                       <div class="row" style="margin-top: 30px">
                         <div class="col s12">
-                          <p
-                            style="
-                              font-size: 20px;
-                              line-height: 30px;
-                              font-weight: 400;
-                              color: #777777;
-                            "
-                          >
+                          <p class="testimoni-text">
                             Bagus banget tempatnya, kolamnya juga luas+nyatu
                             sama mall pokoknya the best
                           </p>
@@ -934,14 +901,7 @@
                       </div>
                       <div class="row" style="margin-top: 30px">
                         <div class="col s12">
-                          <p
-                            style="
-                              font-size: 20px;
-                              line-height: 30px;
-                              font-weight: 400;
-                              color: #777777;
-                            "
-                          >
+                          <p class="testimoni-text">
                             Bagus banget tempatnya, kolamnya juga luas+nyatu
                             sama mall pokoknya the best
                           </p>
@@ -985,14 +945,7 @@
                       </div>
                       <div class="row" style="margin-top: 30px">
                         <div class="col s12">
-                          <p
-                            style="
-                              font-size: 20px;
-                              line-height: 30px;
-                              font-weight: 400;
-                              color: #777777;
-                            "
-                          >
+                          <p class="testimoni-text">
                             Bagus banget tempatnya, kolamnya juga luas+nyatu
                             sama mall pokoknya the best
                           </p>
@@ -1036,14 +989,7 @@
                       </div>
                       <div class="row" style="margin-top: 30px">
                         <div class="col s12">
-                          <p
-                            style="
-                              font-size: 20px;
-                              line-height: 30px;
-                              font-weight: 400;
-                              color: #777777;
-                            "
-                          >
+                          <p class="testimoni-text">
                             Bagus banget tempatnya, kolamnya juga luas+nyatu
                             sama mall pokoknya the best
                           </p>
@@ -1085,74 +1031,36 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <footer class="footer" style="margin-top: 150px">
+    <footer class="footer footer-container">
       <div class="container">
-        <div
-          class="row valign-wrapper"
-          style="border-bottom: 2px solid #c6c6c6"
-        >
-          <div class="col s4">
-            <h3 style="font-size: 36px; font-weight: 700; color: #5e5e5e">
+        <div class="row valign-wrapper row-footer">
+          <div class="footer-container-text">
+            <h3 class="footer-text">
               IKUTI <span class="blue_text">SOSIAL MEDIA</span> KAMI
             </h3>
           </div>
-          <div class="col s8 right-align">
-            <div style="display: inline-flex">
-              <p
-                style="
-                  margin-right: 10px;
-                  font-weight: 700;
-                  font-size: 18px;
-                  color: #5e5e5e;
-                "
-              >
-                <i
-                  class="fab fa-square-instagram"
-                  style="
-                    border: 2px solid #1a9da5;
-                    padding: 5px;
-                    color: #1a9da5;
-                    font-size: 28px;
-                    border-radius: 50%;
-                  "
-                ></i>
+          <div class="footer-container-icon">
+            <div class="social-media-section">
+              <p class="social-media-text">
+                <i class="fab fa-square-instagram social-media-icon"></i>
                 Instagram
               </p>
-              <p
-                style="
-                  margin-left: 10px;
-                  font-weight: 700;
-                  font-size: 18px;
-                  color: #5e5e5e;
-                "
-              >
-                <i
-                  class="fab fa-tiktok"
-                  style="
-                    border: 2px solid #1a9da5;
-                    padding: 5px;
-                    color: #1a9da5;
-                    font-size: 28px;
-                    border-radius: 50%;
-                  "
-                ></i>
-                Tiktok
+              <p class="social-media-text">
+                <i class="fab fa-tiktok social-media-icon"></i>
+                TikTok
               </p>
             </div>
           </div>
         </div>
         <div class="row">
-          <p style="font-size: 16px; font-weight: 500; color: #5e5e5e">
-            Copyright © Hermione Property 2024
-          </p>
+          <p class="footer-copyright">Copyright © Hermione Property 2024</p>
         </div>
       </div>
     </footer>
 
     <div class="fixed-action-btn">
       <button
-        class="btn-floating btn-large waves-effect waves-light"
+        class="btn-floating waves-effect waves-light"
         id="btnScrollToTop"
         style="background-color: #1a9da5 !important"
       >
