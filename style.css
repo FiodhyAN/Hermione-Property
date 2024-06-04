@@ -1089,7 +1089,7 @@ background-color: rgba(37, 169, 187, 0.32) !important;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
 }
 
 .image-facility {
@@ -1120,6 +1120,9 @@ background-color: rgba(37, 169, 187, 0.32) !important;
 @media (max-width: 1024px) {
   .util_nav_5 {
     width: 100px;
+  }
+  .facility-container-rtl {
+    flex-direction: column-reverse;
   }
   .image-facility {
     width: 100%;
