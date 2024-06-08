@@ -144,11 +144,15 @@ $(document).ready(function () {
   })
 
   $('.btn-room-order').on('click', function(){
-    // link to whatsapp with the data-kamar
-    let kamar = $(this).data('kamar');
-    let url = `https://wa.me/6285718070442?text=Halo%20saya%20ingin%20pesan%20kamar%20${kamar}`;
-    window.open(url, '_blank');
-  })
+    let message = `\uD83C\uDFE2Form Checkin Apartemen Grand Kamala Lagoon\uD83C\uDFE2
+\uD83D\uDC64Nama:
+\u231A Lama Sewa:
+\uD83D\uDCCBEstimasi Kedatangan:
+\uD83D\uDCB5Pembayaran TF / COD (Pilih salah satu):
+\uD83D\uDCCBcatatan Tambah:`;
+      let url = `https://api.whatsapp.com/send?phone=6281382420002&text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+  });
 
   $('.fixed-action-btn').floatingActionButton();
 
@@ -172,4 +176,93 @@ $(document).ready(function () {
   $('#btn_about').click(function(){
     $('html, body').animate({scrollTop: $('#about').offset().top}, 800);
   })
+
+  $('.room-one-bedroom').slick();
+  $('.room-one-bedroom').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+
+  $('#btn-one-bedroom').on('click', function(){
+    $('.room-one-bedroom').show();
+    $('.room-one-bedroom a').first().trigger('click');
+  })
+
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.removedNodes.length) {
+        mutation.removedNodes.forEach(function(node) {
+          if ($(node).hasClass('slick-lightbox')) {
+            // Hide the room-one-bedroom div when the lightbox is closed
+            $('.room-one-bedroom').hide();
+          }
+        });
+      }
+    });
+  });
+
+  // Start observing the document body for changes
+  observer.observe(document.body, { childList: true });
+
+  $('.room-studio').slick();
+  $('.room-studio').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+
+  $('#btn-studio').on('click', function(){
+    $('.room-studio').show();
+    $('.room-studio a').first().trigger('click');
+  })
+
+  const observerStudio = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.removedNodes.length) {
+        mutation.removedNodes.forEach(function(node) {
+          if ($(node).hasClass('slick-lightbox')) {
+            // Hide the room-studio div when the lightbox is closed
+            $('.room-studio').hide();
+          }
+        });
+      }
+    });
+  });
+
+  observerStudio.observe(document.body, { childList: true });
+
+  $('.modal').modal();
+  $('.btn-close-modal').on('click', function(){
+    $('.modal').modal('close');
+  });
+
+  $('.btn-modal-room').on('click', function(){
+    $('.modal').modal('close');
+    // scroll to room section
+    $('html, body').animate({scrollTop: $('#room').offset().top}, 800);
+  });
+
+  $('#slickbtomscms').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+
+  $('#slickcaa555').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+
+  $('#slickyutagf').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+
+  $('#slickperahukertas').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+
+  $('#slickatasyaptri').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
 });
