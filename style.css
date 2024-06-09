@@ -1231,11 +1231,11 @@ background-color: rgba(37, 169, 187, 0.32) !important;
   }
   .icon-prev {
     top: 285px;
-    left: 280px;
+    left: 250px;
   }
   .icon-next {
     top: 285px;
-    right: 280px;
+    right: 250px;
   }
   .facility-small-header-container {
     width: 100%;
@@ -1276,11 +1276,11 @@ background-color: rgba(37, 169, 187, 0.32) !important;
   }
   .icon-prev {
     top: 285px;
-    left: 250px;
+    left: 200px;
   }
   .icon-next {
     top: 285px;
-    right: 250px;
+    right: 200px;
   }
   .facility-header-content-text {
     font-size: 30px;
@@ -1324,11 +1324,11 @@ background-color: rgba(37, 169, 187, 0.32) !important;
   }
   .icon-prev {
     top: 285px;
-    left: 120px;
+    left: 90px;
   }
   .icon-next {
     top: 285px;
-    right: 120px;
+    right: 90px;
   }
   .facility-header-content-text {
     font-size: 20px;
@@ -1364,11 +1364,11 @@ background-color: rgba(37, 169, 187, 0.32) !important;
   }
   .icon-prev {
     top: 285px;
-    left: 90px;
+    left: 70px;
   }
   .icon-next {
     top: 285px;
-    right: 90px;
+    right: 70px;
   }
   .util-facility-1 {
     display: none;
