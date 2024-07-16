@@ -265,4 +265,20 @@ $(document).ready(function () {
     itemSelector: 'a',
     navigateByKeyboard: true
   });
+  $('#anonymous_1').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+  $('#anonymous_2').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+  $('#anonymous_3').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
+  $('#anonymous_4').slickLightbox({
+    itemSelector: 'a',
+    navigateByKeyboard: true
+  });
 });
