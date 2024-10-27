@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="application/ld+json">
       {
-        "@context" : "https://schema.org",
-        "@type" : "WebSite",
-        "name" : "Hermione Property",
-        "alternateName" : "Hermione Property",
-        "url" : "https://hermioneproperti.com",
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Hermione Property",
+        "alternateName": "Hermione Property",
+        "url": "https://hermioneproperti.com"
       }
     </script>
     <link
@@ -22,10 +22,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     /> -->
-    <link
-      rel="stylesheet"
-      href="./assets/css/materialize.min.css"
-    />
+    <link rel="stylesheet" href="./assets/css/materialize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -178,6 +175,81 @@
           <span class="blue_text">Nyaman</span>
         </h1>
         <div class="row mt-50">
+            <div class="col s12">
+              <div class="card card-room">
+                <div class="card-image card-image-room">
+                  <img src="./assets/images/Studio/IMG_3272.jpg" />
+                  <button class="btn btn-image-room" id="btn-studio">
+                    Lihat foto lainnya
+                  </button>
+                </div>
+                  <div class="card-content card-content-room">
+                    <div class="row valign-wrapper room-card-container">
+                      <div class="room-text-facility">
+                        <p class="left-align card-content-text-type">Type</p>
+                        <p
+                          class="left-align card-content-text-room"
+                          style="margin-top: -8px"
+                        >
+                          Studio
+                        </p>
+                      </div>
+                      <div class="room-button-facility">
+                        <button class="btn btn-room-order">
+                          <i class="fa fa-whatsapp left"></i> Pesan Kamar
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row feature">
+                      <div class="col s6 col-feature">
+                        <p class="left-align valign-wrapper">
+                          <i
+                            class="small material-icons"
+                            style="margin-right: 5px; color: black;"
+                            >bed</i
+                          >
+                          <span class="feature-text">Queen Bed</span>
+                        </p>
+                      </div>
+                      <div class="col s6 col-feature">
+                        <p class="left-align valign-wrapper">
+                          <i
+                            class="small material-icons"
+                            style="margin-right: 5px; color: black;"
+                            >zoom_out_map</i
+                          >
+                          <span class="feature-text">18.0</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12">
+                        <p class="left-align card-content-text-amenities">
+                          Fasilitas yang didapat:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12 amenities-container">
+                        <ul class="amenities">
+                          <li>Full Furnished</li>
+                          <li>Water Heater</li>
+                          <li>Kitchen Set</li>
+                          <li>Mineral Water</li>
+                          <li>Handuk</li>
+                          <li>Free Wifi</li>
+                          <li>AC</li>
+                          <li>Alat Mandi</li>
+                          <li>Smart TV (Netflix + DisneyPlus)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-50">
           <div class="col s12">
             <div class="card card-room">
               <div class="card-image card-image-room">
@@ -186,136 +258,75 @@
                   Lihat foto lainnya
                 </button>
               </div>
-              <div class="card-content card-content-room">
-                <div class="row valign-wrapper room-card-container">
-                  <div class="room-text-facility">
-                    <p class="left-align card-content-text-type">Type</p>
-                    <p
-                      class="left-align card-content-text-room"
-                      style="margin-top: -8px"
-                    >
-                      One Bedroom
-                    </p>
-                  </div>
-                  <div class="room-button-facility">
-                    <button class="btn btn-room-order">
-                      <i class="fa fa-whatsapp left"></i> Pesan Kamar
-                    </button>
-                  </div>
-                </div>
-                <div class="row feature">
-                  <div class="col s6 col-feature">
-                    <p class="left-align valign-wrapper">
-                      <i class="small material-icons" style="margin-right: 5px"
-                        >bed</i
+                <div class="card-content card-content-room">
+                  <div class="row valign-wrapper room-card-container">
+                    <div class="room-text-facility">
+                      <p class="left-align card-content-text-type">Type</p>
+                      <p
+                        class="left-align card-content-text-room"
+                        style="margin-top: -8px"
                       >
-                      <span class="feature-text">Queen Bed</span>
-                    </p>
+                        One Bedroom
+                      </p>
+                    </div>
+                    <div class="room-button-facility">
+                      <button class="btn btn-room-order">
+                        <i class="fa fa-whatsapp left"></i> Pesan Kamar
+                      </button>
+                    </div>
                   </div>
-                  <div class="col s6 col-feature">
-                    <p class="left-align valign-wrapper">
-                      <i class="small material-icons" style="margin-right: 5px"
-                        >zoom_out_map</i
-                      >
-                      <span class="feature-text">18.0</span>
-                    </p>
+                  <div class="row feature">
+                    <div class="col s6 col-feature">
+                      <p class="left-align valign-wrapper">
+                        <i class="small material-icons" style="margin-right: 5px; color: black;"
+                          >bed</i
+                        >
+                        <span class="feature-text">Queen Bed</span>
+                      </p>
+                    </div>
+                    <div class="col s6 col-feature">
+                      <p class="left-align valign-wrapper">
+                        <i class="small material-icons" style="margin-right: 5px; color: black;"
+                          >zoom_out_map</i
+                        >
+                        <span class="feature-text">18.0</span>
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col s12">
-                    <p class="left-align card-content-text-amenities">
-                      Fasilitas yang didapat:
-                    </p>
+                  <div class="row">
+                    <div class="col s12">
+                      <p class="left-align card-content-text-amenities">
+                        Fasilitas yang didapat:
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col s12 amenities-container">
-                    <ul class="amenities">
-                      <li>Full Furnished</li>
-                      <li>Water Heater</li>
-                      <li>Kitchen Set</li>
-                      <li>Mineral Water</li>
-                      <li>Handuk</li>
-                      <li>Free Wifi</li>
-                      <li>Full AC</li>
-                      <li>Alat Mandi</li>
-                      <li>Smart TV (Netflix + DisneyPlus)</li>
-                    </ul>
+                  <div class="row">
+                    <div class="col s12 amenities-container">
+                      <ul class="amenities">
+                        <li>Full Furnished</li>
+                        <li>Water Heater</li>
+                        <li>Kitchen Set</li>
+                        <li>Mineral Water</li>
+                        <li>Handuk</li>
+                        <li>Free Wifi</li>
+                        <li>Full AC</li>
+                        <li>Alat Mandi</li>
+                        <li>Smart TV (Netflix + DisneyPlus)</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
 
         <div class="row mt-50">
           <div class="col s12">
-            <div class="card card-room">
-              <div class="card-image card-image-room">
-                <img src="./assets/images/Studio/IMG_3272.jpg" />
-                <button class="btn btn-image-room" id="btn-studio">
-                  Lihat foto lainnya
-                </button>
-              </div>
-              <div class="card-content card-content-room">
-                <div class="row valign-wrapper room-card-container">
-                  <div class="room-text-facility">
-                    <p class="left-align card-content-text-type">Type</p>
-                    <p
-                      class="left-align card-content-text-room"
-                      style="margin-top: -8px"
-                    >
-                      Studio
-                    </p>
-                  </div>
-                  <div class="room-button-facility">
-                    <button class="btn btn-room-order">
-                      <i class="fa fa-whatsapp left"></i> Pesan Kamar
-                    </button>
-                  </div>
-                </div>
-                <div class="row feature">
-                  <div class="col s6 col-feature">
-                    <p class="left-align valign-wrapper">
-                      <i class="small material-icons" style="margin-right: 5px"
-                        >bed</i
-                      >
-                      <span class="feature-text">Queen Bed</span>
-                    </p>
-                  </div>
-                  <div class="col s6 col-feature">
-                    <p class="left-align valign-wrapper">
-                      <i class="small material-icons" style="margin-right: 5px"
-                        >zoom_out_map</i
-                      >
-                      <span class="feature-text">18.0</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col s12">
-                    <p class="left-align card-content-text-amenities">
-                      Fasilitas yang didapat:
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col s12 amenities-container">
-                    <ul class="amenities">
-                      <li>Full Furnished</li>
-                      <li>Water Heater</li>
-                      <li>Kitchen Set</li>
-                      <li>Mineral Water</li>
-                      <li>Handuk</li>
-                      <li>Free Wifi</li>
-                      <li>AC</li>
-                      <li>Alat Mandi</li>
-                      <li>Smart TV (Netflix + DisneyPlus)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <a href="room.html">
+              <button class="btn btn_outline" id="btn_room_page">
+                Lihat daftar kamar lainnya
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -822,31 +833,6 @@
       <div class="footer-facility"></div>
     </section>
 
-    <!-- <section class="facility-mobile">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <p class="left-align card-content-text-amenities">
-              Fasilitas Lainnya:
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            <ul class="facilities">
-              <li>Lobby Area</li>
-              <li>Swimming Pool</li>
-              <li>Pocket Garden</li>
-              <li>GYM</li>
-              <li>Access Mall</li>
-              <li>Vending Machine</li>
-              <li>Parking Area</li>
-            </ul>
-          </div>
-        </div>
-      </div> 
-    </section> -->
-
     <section class="about" id="about">
       <div class="row valign-wrapper">
         <div class="col s12 right-align">
@@ -1209,7 +1195,10 @@
                       <div class="row" style="margin-top: 30px">
                         <div class="col s12">
                           <p class="testimoni-text">
-                            ac dingin dan tv bagusss🥰🥰, terbaik deh min sesuai request, langganan dan ini yg ke 4 terbaik servicenya min🥰, improve banget masukan dri customer hehehe, next mau coba yg 1 bed min
+                            ac dingin dan tv bagusss🥰🥰, terbaik deh min sesuai
+                            request, langganan dan ini yg ke 4 terbaik
+                            servicenya min🥰, improve banget masukan dri
+                            customer hehehe, next mau coba yg 1 bed min
                           </p>
                         </div>
                       </div>
@@ -1259,7 +1248,9 @@
                       <div class="row" style="margin-top: 30px">
                         <div class="col s12">
                           <p class="testimoni-text">
-                            Makasih banyak ka, fasilitas dan kenyamanan nya🥰, Sangat sangat puas🥰🥰, Ga bakal booking kemana mana🥰🥰
+                            Makasih banyak ka, fasilitas dan kenyamanan nya🥰,
+                            Sangat sangat puas🥰🥰, Ga bakal booking kemana
+                            mana🥰🥰
                           </p>
                         </div>
                       </div>
@@ -1359,7 +1350,9 @@
                       <div class="row" style="margin-top: 30px">
                         <div class="col s12">
                           <p class="testimoni-text">
-                            aku udh suka rent disini,, yg harganya dibawah ada kaak, cm aku suka sm hermione, bersih kamarnya, amenities ready, kopi teh ada.. loved dah
+                            aku udh suka rent disini,, yg harganya dibawah ada
+                            kaak, cm aku suka sm hermione, bersih kamarnya,
+                            amenities ready, kopi teh ada.. loved dah
                           </p>
                         </div>
                       </div>

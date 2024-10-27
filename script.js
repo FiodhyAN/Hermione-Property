@@ -194,12 +194,7 @@ $(document).ready(function () {
   });
 
   $(".btn-room-order").on("click", function () {
-    let message = `\uD83C\uDFE2Form Checkin Apartemen Grand Kamala Lagoon\uD83C\uDFE2
-\uD83D\uDC64Nama:
-\u231A Lama Sewa:
-\uD83D\uDCCBEstimasi Kedatangan:
-\uD83D\uDCB5Pembayaran TF / COD (Pilih salah satu):
-\uD83D\uDCCBcatatan Tambah:`;
+    let message = `halo min, boleh minta info sewa apartemennya?`;
     let url = `https://api.whatsapp.com/send?phone=6281382420002&text=${encodeURIComponent(
       message
     )}`;
@@ -234,11 +229,54 @@ $(document).ready(function () {
     itemSelector: "a",
     navigateByKeyboard: true,
   });
-
+  
   $("#btn-one-bedroom").on("click", function () {
     $(".room-one-bedroom").show();
     $(".room-one-bedroom a").first().trigger("click");
   });
+  $(".room-one-bedroom-1").slick();
+  $(".room-one-bedroom-1").slickLightbox({
+    itemSelector: "a",
+    navigateByKeyboard: true,
+  });
+  $("#btn-one-bedroom-1").on("click", function () {
+    $(".room-one-bedroom-1").show();
+    $(".room-one-bedroom-1 a").first().trigger("click");
+  });
+  $(".room-one-bedroom-2").slick();
+  $(".room-one-bedroom-2").slickLightbox({
+    itemSelector: "a",
+    navigateByKeyboard: true,
+  });
+  $("#btn-one-bedroom-2").on("click", function () {
+    $(".room-one-bedroom-2").show();
+    $(".room-one-bedroom-2 a").first().trigger("click");
+  });
+  // Function to initialize slick and slickLightbox for a specific studio
+function initializeStudio(roomNumber) {
+  const roomClass = `.room-studio-${roomNumber}`;
+  const buttonId = `#btn-studio-${roomNumber}`;
+  
+  // Initialize slick and slickLightbox
+  $(roomClass).slick();
+  $(roomClass).slickLightbox({
+    itemSelector: "a",
+    navigateByKeyboard: true,
+  });
+  
+  // Bind click event to button
+  $(buttonId).on("click", function () {
+    $(roomClass).show();
+    $(`${roomClass} a`).first().trigger("click");
+  });
+}
+
+// Loop through each studio room from 1 to 18 and initialize
+for (let i = 1; i <= 18; i++) {
+  initializeStudio(i);
+}
+
+
 
   const observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
