@@ -443,8 +443,58 @@ nav {
   z-index: 1;
 }
 
+.util_service_room_page_1 {
+  position: relative;
+  right: 57%;
+  width: 40px;
+  z-index: 1;
+  margin-top: -175px;
+}
+
+.util_service_room_page_1 img {
+  width: 100%;
+}
+
+.util_service_room_page_2 {
+  position: relative;
+  left: 58%;
+  width: 125px;
+  z-index: 1;
+  margin-top: -125px;
+}
+
+.util_service_room_page_2 img {
+  width: 100%;
+}
+
+.util_service_room_page_3 {
+  position: relative;
+  right: 58%;
+  width: 125px;
+  z-index: 1;
+  margin-top: -125px;
+}
+
+.util_service_room_page_3 img {
+  width: 100%;
+}
+
+.image-1 {
+  margin-left: 20px;
+}
+
+.image-2 {
+  margin-top: -30px;
+}
+
 .util_service img {
   width: 100%;
+}
+
+.util-header {
+  width: 100%;
+  margin-top: -50px;
+  z-index: -1;
 }
 
 @media (max-width: 992px) {
@@ -480,6 +530,26 @@ nav {
 
   .util_service {
     width: 50px;
+  }
+
+  .btn-back {
+    margin-top: 50px;
+    width: 25%;
+  }
+  .room-text-header {
+    margin-top: 150px;
+  }
+
+  .util_service_room_page_1 {
+    display: none;
+  }
+
+  .util_service_room_page_2 {
+    display: none;
+  }
+
+  .util_service_room_page_3 {
+    display: none;
   }
 }
 
@@ -1220,7 +1290,7 @@ background-color: rgba(37, 169, 187, 0.32) !important;
 }
 
 #btn_back {
-  margin-top: 20px;
+  margin-top: 75px;
   margin-left: 20px;
 }
 
@@ -1760,4 +1830,5 @@ h2 {
   border: 2px solid #5e5e5e;
   font-size: 10px;
   padding: 2px 10px;
+  position: absolute;
 }
